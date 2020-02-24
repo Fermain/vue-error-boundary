@@ -17,11 +17,14 @@
     "error boundary"
   ],
   "scripts": {
-    "build": "bili ./src/index.js --plugin vue --format cjs-min,umd-min --moduleName ErrorBoundary"
+    "build": "bili ./src/index.js --plugin vue --format cjs,es,umd,umd-min --moduleName ErrorBoundary"
   },
   "devDependencies": {
     "bili": "^3.1.0",
     "rollup-plugin-vue": "^4.0.0",
-    "vue-template-compiler": "^2.5.16"
+    "vue-template-compiler": "^2.6.11"
+  },
+  "dependencies": {
+    "@types/vue": "^2.0.0"
   }
 }
